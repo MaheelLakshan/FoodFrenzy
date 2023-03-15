@@ -2,22 +2,45 @@ export const SidebarData = [
   {
     //   icon: UilEstate,
     heading: 'HOME',
-    where: '/',
+    where: '/buyer/home',
   },
   {
     //   icon: UilClipboardAlt,
     heading: 'SHOP',
-    where: '/shops',
+    where: '/buyer/shops',
   },
   {
     //   icon: UilUsersAlt,
     heading: 'FOODS',
-    where: '/foods',
+    where: '/buyer/foods',
   },
   {
     //   icon: UilPackage,
     heading: 'SETTINGS',
-    where: '/settings',
+    where: '/buyer/settings',
+  },
+];
+
+export const ShopHeaderData = [
+  {
+    //   icon: UilEstate,
+    heading: 'All Orders',
+    where: '/seller/allorders',
+  },
+  {
+    //   icon: UilClipboardAlt,
+    heading: 'Requests',
+    where: '/seller/requests',
+  },
+  {
+    //   icon: UilUsersAlt,
+    heading: 'Foods',
+    where: '/seller/foods',
+  },
+  {
+    //   icon: UilPackage,
+    heading: 'Summary',
+    where: '/seller/summary',
   },
 ];
 

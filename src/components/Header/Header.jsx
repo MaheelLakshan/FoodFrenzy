@@ -1,18 +1,11 @@
 import './Header.css';
 import { NavLink } from 'react-router-dom';
-import { SidebarData } from '../../Data';
-// import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { FaBell, FaShoppingCart } from 'react-icons/fa';
 import { MdClose } from 'react-icons/md';
 import profilePic from '../../Assets/boy-with-cap-icon.png';
 
-function Header() {
-  const navLinkStyles = {
-    textDecoration: 'none',
-    // margin: '0.15rem',
-    color: 'white',
-  };
+function Header({ content: ContentComponent }) {
   const [showNotification, setShowNotification] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
   const [showCart, setShowCart] = useState(false);
@@ -35,21 +28,22 @@ function Header() {
 
   return (
     <div className="menu">
-      {SidebarData.map((item, index) => (
-        <NavLink
-          to={`${item.where}`}
-          style={navLinkStyles}
-          key={index}
-          className={({ isActive }) =>
-            isActive ? 'menuItem active' : 'menuItem'
-          }
-        >
-          {/* <item.icon /> */}
+      <div className='header-left'>
+        {ContentComponent.map((item, index) => (
+          <NavLink
+            to={`${item.where}`}
+            key={index}
+            className={({ isActive }) =>
+              isActive ? 'menuItem active' : 'menuItem'
+            }
+          >
+            {/* <item.icon /> */}
 
-          {item.heading}
-        </NavLink>
-      ))}
-      ,
+            {item.heading}
+          </NavLink>
+        ))}
+      </div>
+
       <div className="header-right">
         <div className="notification-icon" onClick={toggleNotification}>
           <FaBell />
@@ -58,7 +52,7 @@ function Header() {
               <div className="notification-header">
                 <h3>Notifications</h3>
                 <button onClick={toggleNotification}>
-                  <MdClose />
+                  <MdClose className="close" />
                 </button>
               </div>
               <ul>
@@ -95,11 +89,7 @@ function Header() {
               <h3>Log out?</h3>
               <div className="logout-buttons">
                 {/* <button onClick={handleLogout}>Yes</button> */}
-                <NavLink
-                  to="/logout"
-                  activeClassName="active"
-                  onClick={toggleLogout}
-                >
+                <NavLink to="/" activeClassName="active" onClick={toggleLogout}>
                   Yes
                 </NavLink>
                 <button onClick={toggleLogout}>No</button>

@@ -29,5 +29,6 @@
   display: grid;
   gap: 30px;
   align-items: center;
+  font-weight: 200;
   justify-items: center;
 }
