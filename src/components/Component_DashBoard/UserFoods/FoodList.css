@@ -1,38 +1,41 @@
 /* Food List */
 .food-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(1, 300px);
   grid-gap: 20px;
+  padding-top: 15px;
 }
 
-/* Food Card */
-.card {
+/* Food card-food */
+.card-food {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%; /* add this to make sure all card-foods have the same height */
 }
 
-.card img {
+.card-food img {
   width: 100%;
-  height: 200px;
+  height: 35%;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.card h3 {
-  font-size: 24px;
+.card-food h3 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.card p {
-  font-size: 16px;
+.card-food p {
+  font-size: 11px;
   margin-bottom: 10px;
 }
 
-.card button {
+.card-food button {
   background-color: #21a600;
   color: #fff;
   border: none;
@@ -43,6 +46,13 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.card button:hover {
+.card-food button:hover {
   background-color: #0d8000;
+}
+
+@media only screen and (max-width: 767px) {
+  /* adjust the grid-template-columns value for smaller screens */
+  .food-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }

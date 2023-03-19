@@ -51,7 +51,7 @@
   border-radius: 2rem;
   padding-left: 3%;
   gap: 16px;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .DashBoardGlassBackGround {

@@ -11,7 +11,7 @@ import HomePage from './HomePage/HomePage';
 import AllOrders from './Pages/ShopPages/AllOrders/AllOrders';
 import Requests from './Pages/ShopPages/Requests/Requests';
 import SFoods from './Pages/ShopPages/SFoods/SFoods';
-import Summary from './Pages/ShopPages/Summary/Summary';
+import Financial from './Pages/ShopPages/Financial/Financial';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,7 +28,7 @@ root.render(
       <Route path="/seller/allorders" element={<AllOrders />} />
       <Route path="/seller/requests" element={<Requests />} />
       <Route path="/seller/foods" element={<SFoods />} />
-      <Route path="/seller/summary" element={<Summary />} />
+      <Route path="/seller/financial" element={<Financial />} />
     </Routes>
   </Router>
 );

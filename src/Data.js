@@ -14,11 +14,11 @@ export const SidebarData = [
     heading: 'FOODS',
     where: '/buyer/foods',
   },
-  {
-    //   icon: UilPackage,
-    heading: 'SETTINGS',
-    where: '/buyer/settings',
-  },
+  // {
+  //   //   icon: UilPackage,
+  //   heading: 'SETTINGS',
+  //   where: '/buyer/settings',
+  // },
 ];
 
 export const ShopHeaderData = [
@@ -39,8 +39,8 @@ export const ShopHeaderData = [
   },
   {
     //   icon: UilPackage,
-    heading: 'Summary',
-    where: '/seller/summary',
+    heading: 'Financial',
+    where: '/seller/financial',
   },
 ];
 
