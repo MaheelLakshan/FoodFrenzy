@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { HomePageData } from '../Data';
 import './HomePage.css';
 
-function HeaderHomePage() {
-  const [activeItem, setActiveItem] = useState('HOME');
+function HeaderHomePage({ Active }) {
+  const [activeItem, setActiveItem] = useState(`${Active}`);
 
   const handleItemClick = (item) => {
     setActiveItem(item);

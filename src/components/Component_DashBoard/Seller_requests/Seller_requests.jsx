@@ -12,11 +12,18 @@ function Seller_requests() {
         <div className="Titles">Status</div>
       </div>
       <div className="Table">
-        <div>dad</div>
-        <div>dad</div>
-        <div>dad</div>
-        <div>dad</div>
-        <div>dad</div>
+        <div>0001</div>
+        <div>11:00Pm</div>
+        <div>Kottu</div>
+        <div>5</div>
+        <div>preaparing</div>
+      </div>
+      <div className="Table">
+        <div>0002</div>
+        <div>10:30Pm</div>
+        <div>Rice</div>
+        <div>2</div>
+        <div>Preparing</div>
       </div>
     </div>
   );

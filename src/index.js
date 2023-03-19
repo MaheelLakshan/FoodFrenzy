@@ -12,6 +12,8 @@ import AllOrders from './Pages/ShopPages/AllOrders/AllOrders';
 import Requests from './Pages/ShopPages/Requests/Requests';
 import SFoods from './Pages/ShopPages/SFoods/SFoods';
 import Financial from './Pages/ShopPages/Financial/Financial';
+import Signup from './HomePage/HomepageRoutes/Signup';
+import About from './HomePage/HomepageRoutes/About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +21,9 @@ root.render(
     <Routes>
       {/* <Route path="/" element={<App />} /> */}
       <Route path="/" element={<HomePage />} />
+      {/* <Route path="/food" element={<HomePage />} /> */}
+      <Route path="/singup" element={<Signup />} />
+      <Route path="/about" element={<About />} />
 
       <Route path="/buyer/home" element={<App />} />
       <Route path="/buyer/shops" element={<Shops />} />

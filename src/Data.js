@@ -50,11 +50,11 @@ export const HomePageData = [
     heading: 'HOME',
     where: '/',
   },
-  {
-    //   icon: UilClipboardAlt,
-    heading: 'FOODS',
-    where: '/food',
-  },
+  // {
+  //   //   icon: UilClipboardAlt,
+  //   heading: 'FOODS',
+  //   where: '/food',
+  // },
   {
     //   icon: UilUsersAlt,
     heading: 'SIGNUP',

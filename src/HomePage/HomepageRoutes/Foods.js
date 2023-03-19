@@ -1,10 +1,10 @@
 import { React, useState } from 'react';
-import './HomePage.css';
+import './Foods.css';
 import FoodPlate from '../Assets/foodplate.png';
-import HeaderHomePage from './HeaderHomepage';
+import HeaderFoods from './HeaderFoods';
 import { useNavigate } from 'react-router-dom';
 
-function HomePage() {
+function Foods() {
   const [DifferentUsers, SetDifferentUsers] = useState('Buyer');
   const navigate = useNavigate();
   const HandlerBuyer = () => {
@@ -37,7 +37,7 @@ function HomePage() {
   return (
     <div className="Grid">
       <div className="MainGrid">
-        <HeaderHomePage Active={'HOME'} />
+        <HeaderFoods />
       </div>
       <div className="slidebarBackground"></div>
       <div>
@@ -89,4 +89,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Foods;

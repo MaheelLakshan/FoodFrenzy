@@ -12,11 +12,11 @@ function UserHomePage() {
         <div className="Titles">Status</div>
       </div>
       <div className="Table">
-        <div>dad</div>
-        <div>dad</div>
-        <div>dad</div>
-        <div>dad</div>
-        <div>dad</div>
+        <div>No</div>
+        <div>Order</div>
+        <div>Has</div>
+        <div>Been</div>
+        <div>Placed</div>
       </div>
     </div>
   );
